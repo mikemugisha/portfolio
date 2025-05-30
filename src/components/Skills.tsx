@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+// Skill categories
 const industryKnowledge = [
   'Statistical Data Analysis',
   'Data Visualization',
@@ -52,7 +53,14 @@ const additionalSkills = [
   'Testing'
 ];
 
-function ScrollableList({ title, items }) {
+// Type for props
+type ScrollableListProps = {
+  title: string;
+  items: string[];
+};
+
+// Scrollable skill box
+function ScrollableList({ title, items }: ScrollableListProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -71,6 +79,7 @@ function ScrollableList({ title, items }) {
   );
 }
 
+// Main Skills component
 export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-blue-50">
