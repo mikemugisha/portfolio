@@ -6,60 +6,40 @@ const services = [
   {
     title: 'Custom Website Solutions',
     description:
-      'I build modern, responsive websites using platforms like WordPress and custom code. From single-page sites to full web applications, I create engaging solutions.',
+      'I build modern, responsive websites using WordPress and custom code. From single-page sites to full web applications, I create engaging solutions.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
-    title: 'Business System Authomation',
+    title: 'Business System Automation',
     description:
-      'Streamline operations through expert system integration. I connect tools, automate workflows, and ensure seamless data flow to help your business scale.',
+      'Streamline operations with expert system integration. I connect tools, automate workflows, and ensure seamless data flow to help your business scale.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
     title: 'App & Software Engineering',
     description:
-      'From concept to launch, I design and develop tailored mobile and software solutions across Android, iOS, and web platforms to match your vision.',
+      'From concept to launch, I design and develop tailored mobile and web software solutions that bring your vision to life.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
     title: 'Technical Support & Infrastructure',
     description:
-      'Reliable IT support services including network troubleshooting, email setup, and computer repair. I keep your tech running at peak performance.',
+      'Reliable IT support including network setup, troubleshooting, and device repair. I keep your tech running at peak performance.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
     ),
   },
@@ -79,7 +59,7 @@ export default function Services() {
           <h2 className="text-4xl font-extrabold text-gray-900 mb-2">Services</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-            I offer a comprehensive range of development and IT services to bring your vision to life—efficiently, securely, and beautifully.
+            I offer a full range of development and IT services to bring your vision to life—efficiently, securely, and beautifully.
           </p>
         </motion.div>
 

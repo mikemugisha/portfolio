@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 export default function Hero() {
   return (
@@ -25,7 +24,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Mike Mugisha
             </h1>
-            <motion.h2 
+            <motion.h2
               className="text-2xl md:text-3xl text-gray-300 mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -33,7 +32,7 @@ export default function Hero() {
             >
               Full Stack Developer
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="text-lg md:text-xl text-gray-200 mb-12 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -65,4 +64,4 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}

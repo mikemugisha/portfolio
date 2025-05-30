@@ -37,14 +37,14 @@ export default function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-semibold text-gray-900">
-              Hi, I'm Mike Mugisha
+              Hi, I&apos;m Mike Mugisha
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              I'm a passionate full-stack developer and creative problem solver. I love building beautiful, responsive web applications and helping businesses grow through technology and design. Whether you need a website, a custom app, or a unique graphic design, I'm here to help you bring your ideas to life.
+              I&apos;m a passionate full-stack developer and creative problem solver. I love building beautiful, responsive web applications and helping businesses grow through technology and design. Whether you need a website, a custom app, or a unique graphic design, I&apos;m here to help you bring your ideas to life.
             </p>
             <p className="text-gray-600 leading-relaxed">
               With a strong foundation in both front-end and back-end development, I strive to
-              create seamless user experiences while maintaining clean, efficient code. I'm
+              create seamless user experiences while maintaining clean, efficient code. I&apos;m
               constantly learning and adapting to new technologies to stay at the forefront
               of web development.
             </p>
@@ -61,4 +61,4 @@ export default function About() {
       </div>
     </section>
   );
-} 
+}

@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import { motion } from 'framer-motion';
 
@@ -73,7 +73,7 @@ export default function Projects() {
           <div className="p-8">
             <h3 className="text-3xl font-semibold text-gray-900 mb-4">Eagle Flight Plan System</h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              A robust web app built for Oklahoma Christian University Career Services. It tracks students' career readiness progress semester-by-semester. Developed with Agile/Scrum methodology including sprint demos and live client feedback.
+              A robust web app built for Oklahoma Christian University Career Services. It tracks students&apos; career readiness progress semester-by-semester. Developed with Agile/Scrum methodology including sprint demos and live client feedback.
             </p>
             <p className="text-sm text-gray-600 mb-6">
               <strong>Tech Stack:</strong> Vue.js, Vuetify, JavaScript, Node.js, Express, Sequelize, MySQL, AWS, XAMPP
