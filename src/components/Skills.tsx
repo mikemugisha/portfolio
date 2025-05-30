@@ -2,20 +2,78 @@
 
 import { motion } from 'framer-motion';
 
-const skills = [
-  { name: 'React', level: 90 },
-  { name: 'TypeScript', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'Next.js', level: 85 },
-  { name: 'Tailwind CSS', level: 90 },
-  { name: 'Python', level: 75 },
-  { name: 'SQL', level: 80 },
-  { name: 'Git', level: 85 },
+const industryKnowledge = [
+  'Statistical Data Analysis',
+  'Data Visualization',
+  'Microsoft Excel',
+  'Operating Systems',
+  'Network Infrastructure',
+  'MySQL',
+  'Data Security & Compliance',
+  'Automation & Process Optimization',
+  'Quality Assurance & Anomaly Detection',
+  'Machine Learning (Basic)',
+  'Trend Analysis & Risk Assessment'
 ];
+
+const toolsTechnologies = [
+  'C++',
+  'HTML/CSS & JavaScript',
+  'React',
+  'TypeScript',
+  'Node.js',
+  'Next.js',
+  'Tailwind CSS',
+  'Python',
+  'SQL',
+  'Git',
+  'CI/CD',
+  'Docker'
+];
+
+const interpersonalSkills = [
+  'Customer Service',
+  'Conflict Resolution',
+  'Time Management',
+  'Decision-Making',
+  'Communication',
+  'Mentorship',
+  'Spiritual Leadership',
+  'Crisis Management',
+  'Team Collaboration'
+];
+
+const additionalSkills = [
+  'RESTful APIs',
+  'GraphQL',
+  'AWS',
+  'Agile',
+  'UI/UX Design',
+  'Testing'
+];
+
+function ScrollableList({ title, items }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="bg-white rounded-lg p-6 shadow max-h-64 overflow-y-auto"
+    >
+      <h3 className="text-xl font-semibold text-blue-700 mb-4">{title}</h3>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        {items.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+}
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,31 +86,10 @@ export default function Skills() {
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-50 p-6 rounded-lg"
-            >
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-700 font-medium">{skill.name}</span>
-                <span className="text-gray-500">{skill.level}%</span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: index * 0.1 }}
-                  className="bg-blue-600 h-2.5 rounded-full"
-                />
-              </div>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <ScrollableList title="Industry Knowledge" items={industryKnowledge} />
+          <ScrollableList title="Tools & Technologies" items={toolsTechnologies} />
+          <ScrollableList title="Interpersonal Skills" items={interpersonalSkills} />
         </div>
 
         <motion.div
@@ -66,16 +103,7 @@ export default function Skills() {
             Additional Skills
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'RESTful APIs',
-              'GraphQL',
-              'AWS',
-              'Docker',
-              'CI/CD',
-              'Agile',
-              'UI/UX Design',
-              'Testing',
-            ].map((skill) => (
+            {additionalSkills.map((skill) => (
               <span
                 key={skill}
                 className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm"
@@ -88,4 +116,4 @@ export default function Skills() {
       </div>
     </section>
   );
-} 
+}
